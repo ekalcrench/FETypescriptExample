@@ -1,0 +1,65 @@
+@import url('../../../../../theme/fonts.scss');
+@import '../../../../../theme/variables.scss';
+
+.download-modal{
+    width: 30vw;
+    height: 20vw;
+    background-color: white;
+    margin: auto;
+    border-radius: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    padding: 1vw 1.5vw 2vw 1.5vw;
+    .close-button-row{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        .close-button{
+            background-image: url('../../../../../assets/imgs/close.png');
+            border-image: none;
+            width: 2vw;
+            height: 2vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .close-button:hover{
+            background-image: url('../../../../../assets/imgs/close-hover.png');
+        }
+    }
+    .modal-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .modal-header-title{
+            font-size: 2.3vw;
+            font-family: 'Lato-Regular';
+            font-weight: bold;
+            margin: 0;
+        }
+        .download-modal-img{
+            width: 15vw;
+        }
+    }
+    .btn-container{
+        .btn-yes{
+            width: 10vw !important;
+            height: 2.5vw !important;
+            background-color: map-get($colors, primary) !important;
+            margin-right: 1vw;
+        }
+        .btn-yes:hover{
+            background-color: map-get($colors, primary-dark) !important;
+        }
+        .btn-no{
+            width: 10vw !important;
+            height: 2.5vw !important;
+            background-color: #F2F2F4 !important;
+        }
+        .btn-no:hover{
+            background-color: rgb(227, 227, 230) !important;
+        }
+    }
+}

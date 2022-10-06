@@ -1,0 +1,181 @@
+@import '../../../theme/variables';
+@import '../../../theme/functions';
+
+@media (min-width: 1026px) {
+    .logout-modal {
+        width: vw(375);
+        height: vw(175);
+        background-color: white;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: vw(5);
+        padding: vw(65) vw(105) vw(80) vw(105);
+        .title {
+            font-family: "Lato-Medium" !important;
+            font-size: vw(18);
+            color: black;
+            opacity: .75;
+        }
+        .btn-container{  
+            width: vw(375);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .btn-yes{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: vw(164.22) !important;
+                height: vw(33.07) !important;
+                font-size: vw(13) !important;
+                line-height: vw(16) !important;
+                font-family: 'Lato-Regular';
+                background-color: map-get($colors , primary);
+                text-transform: none;
+                box-shadow: 0px vw(3) vw(6) rgba(0, 0, 0, 0.161);
+                border-radius: vw(5);
+                cursor: pointer;
+            }        
+            .btn-no{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: vw(164.22) !important;
+                height: vw(33.07) !important;
+                font-size: vw(13) !important;
+                line-height: vw(16) !important;
+                font-family: 'Lato-Regular';
+                text-transform: none;
+                box-shadow: 0px vw(3) vw(6) rgba(0, 0, 0, 0.161);
+                border-radius: vw(5);
+                background: #E6E6E6;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// mobile
+@media (max-width: 599px) {
+    .logout-modal {
+        width: vw-mobile(228); 
+        height: vw-mobile(100);
+        background-color: white;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: vw-mobile(10);
+        padding: vw-mobile(40) vw-mobile(46) vw-mobile(49) vw-mobile(46);
+        .title {
+            font-family: "Lato-Medium" !important;
+            font-size: vw-mobile(14);
+            color: #3C3B3B;
+            opacity: .75;
+            line-height: vw-mobile(16.8);
+            text-align: center;
+            flex-wrap: wrap
+        }
+        .btn-container{  
+            width: vw-mobile(222);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .btn-yes{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: vw-mobile(101) !important;
+                height: vw-mobile(37) !important;
+                font-size: vw-mobile(13) !important;
+                line-height: vw-mobile(16) !important;
+                font-family: 'Lato-Medium';
+                background-color: map-get($colors , primary);
+                text-transform: none;
+                box-shadow: 0px vw-mobile(3) vw-mobile(6) rgba(0, 0, 0, 0.161);
+                border-radius: vw-mobile(5);
+                cursor: pointer;
+            }        
+            .btn-no{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: vw-mobile(101) !important;
+                height: vw-mobile(37) !important;
+                font-size: vw-mobile(13) !important;
+                line-height: vw-mobile(16) !important;
+                font-family: 'Lato-Medium';
+                text-transform: none;
+                box-shadow: 0px vw-mobile(3) vw-mobile(6) rgba(0, 0, 0, 0.161);
+                border-radius: vw-mobile(5);
+                background: #F2F2F4;
+                cursor: pointer;
+            }
+        }
+    }   
+}
+
+// tab
+@media (min-width: 600px) and (max-width: 1025px) {
+    .logout-modal {
+        width: vw-tab(359); 
+        height: vw-tab(119);
+        background-color: white;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: vw-tab(10);
+        padding: vw-tab(63) vw-tab(104) vw-tab(80) vw-tab(104);
+        .title {
+            font-family: "Lato-Medium" !important;
+            font-size: vw-tab(18);
+            color: black;
+            opacity: .5;
+            line-height: vw-tab(22);
+            text-align: center;
+            flex-wrap: wrap
+        }
+        .btn-container{  
+            width: vw-tab(358);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .btn-yes{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: vw-tab(164) !important;
+                height: vw-tab(33) !important;
+                font-size: vw-tab(13) !important;
+                line-height: vw-tab(16) !important;
+                font-family: 'Lato-Regular';
+                background-color: map-get($colors , primary);
+                text-transform: none;
+                box-shadow: 0px vw-tab(3) vw-tab(6) rgba(0, 0, 0, 0.161);
+                border-radius: vw-tab(5);
+                cursor: pointer;
+            }        
+            .btn-no{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: vw-tab(164) !important;
+                height: vw-tab(33) !important;
+                font-size: vw-tab(13) !important;
+                line-height: vw-tab(16) !important;
+                font-family: 'Lato-Regular';
+                text-transform: none;
+                box-shadow: 0px vw-tab(3) vw-tab(6) rgba(0, 0, 0, 0.161);
+                border-radius: vw-tab(5);
+                background: #C4C4C4;
+                cursor: pointer;
+            }
+        }
+    }   
+}

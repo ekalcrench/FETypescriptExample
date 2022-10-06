@@ -1,0 +1,169 @@
+@import '../../theme/variables';
+@import '../../theme/functions';
+
+@media (min-width: 1025px){
+    .menu{
+        flex-shrink: 0;
+        .drawer-paper{
+            border: none;
+            box-shadow: 0 vw(15) vw(30) rgba(0, 0, 0, 0.161);
+            width: vw(241) !important;
+            .dca-logo{
+                width: vw(184);
+                left: -vw(30);
+                margin: vw(24) auto vw(35) auto;
+            }
+            .menu-item{
+                height: vw(37);
+                margin-bottom: vw(10);
+                margin-left: vw(22);
+                .item-text{
+                    font-family: 'Lato-Bold' !important;
+                    font-style: normal;
+                    font-size: vw(15);
+                    line-height: vw(18);
+                    padding: 0 !important;
+                }
+                .item-icon{
+                    height: vw(16.31);
+                }
+            }
+            .menu-item:hover{
+                background-color: map-get($colors , primary);
+            }
+            .icon-root{
+                min-width: vw(10);
+                margin-right: vw(10);
+            }
+            .menu-item-selected{
+                height: vw(37);
+                margin-bottom: vw(10);
+                margin-left: vw(22);
+                background-color: map-get($colors , primary);
+                .item-text{
+                    font-family: 'Lato-Bold' !important;
+                    font-style: normal;
+                    font-size: vw(15);
+                    line-height: vw(18);
+                    padding: 0 !important;
+                }
+                .item-icon{
+                    height: vw(16.31);
+                }
+            };
+            .sub-menu{
+                margin-left: vw(50);
+                height: vw(37);
+                margin-bottom: vw(10);
+                .item-text{
+                    font-family: 'Lato-Bold' !important;
+                    font-style: normal;
+                    font-size: vw(15);
+                    line-height: vw(18);
+                    padding: 0 !important;
+                }
+                .item-icon{
+                    height: vw(16.31);
+                }
+            }
+            .sub-menu-selected{
+                margin-left: vw(50);
+                height: vw(37);
+                margin-bottom: vw(10);
+                .item-text{
+                    font-family: 'Lato-Bold' !important;
+                    font-size: vw(15);
+                    line-height: vw(18);
+                    padding: 0 !important;
+                    color: map-get($colors , primary);
+                }
+                .item-icon{
+                    height: vw(16.31);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .menu{
+        flex-shrink: 0;
+        .drawer-paper{
+            width: vw-tab(310) !important;
+            border: none;
+            .dca-logo{
+                width: vw-tab(184);
+                height: vw-tab(45);
+                margin: vw-tab(24) auto vw-tab(50) auto;
+            }
+            .menu-item{
+                height: vw-tab(37);
+                margin-bottom: vw-tab(10);
+                padding-left: vw-tab(63);
+                .item-text{
+                    font-family: 'Lato-Bold' !important;
+                    font-style: normal;
+                    font-size: vw-tab(15);
+                    line-height: vw-tab(18);
+                    padding: 0 !important;
+                }
+                .item-icon{
+                    height: vw-tab(16.31);
+                }
+            }
+            .menu-item:hover{
+                background-color: map-get($colors , primary);
+            }
+            .icon-root{
+                min-width: 1vw;
+                margin-right: vw-tab(10);
+            }
+            .menu-item-selected{
+                height: vw-tab(37);
+                margin-bottom: vw-tab(10);
+                background-color: map-get($colors , primary);
+                padding-left: vw-tab(63);
+                .item-text{
+                    font-family: 'Lato-Bold' !important;
+                    font-style: normal;
+                    font-size: vw-tab(15);
+                    line-height: vw-tab(18);
+                    padding: 0 !important;
+                }
+                .item-icon{
+                    height: vw-tab(16.31);
+                }
+            };
+            .sub-menu{
+                padding-left: vw-tab(99);
+                height: vw-tab(37);
+                margin-bottom: vw-tab(10);
+                .item-text{
+                    font-family: 'Lato-Bold' !important;
+                    font-style: normal;
+                    font-size: vw-tab(15);
+                    line-height: vw-tab(18);
+                    padding: 0 !important;
+                }
+                .item-icon{
+                    height: vw-tab(16.31);
+                }
+            }
+            .sub-menu-selected{
+                padding-left: vw-tab(99);
+                height: vw-tab(37);
+                margin-bottom: vw-tab(10);
+                .item-text{
+                    font-family: 'Lato-Bold' !important;
+                    font-size: vw-tab(15);
+                    line-height: vw-tab(18);
+                    padding: 0 !important;
+                    color: map-get($colors , primary);
+                }
+                .item-icon{
+                    height: vw-tab(16.31);
+                }
+            }
+        }
+    }
+}

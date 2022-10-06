@@ -1,0 +1,47 @@
+kind: Deployment
+apiVersion: apps/v1beta1
+metadata:
+  name: web-dca
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: web-dca
+    spec:
+      containers:
+      - name: web-dca
+        image: myicpdev.unitedtractors.com:8500/devdca/dcafrontendweb:#{Build.BuildId}#
+        resources:
+          limits:
+            cpu: "0.5"
+          requests:
+             cpu: "0.25"
+             memory: "512"
+        ports:
+        - containerPort: 8080
+          name: http
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: web-dca
+spec:
+   ports:
+   - port: 8080
+   selector:
+     app: web-dca
+   type: NodePort
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: web-dca
+spec:
+  rules:
+  - host: webdca-dev.proxyicpdev.unitedtractors.com
+    http:
+      paths:
+      - backend:
+          serviceName: web-dca
+          servicePort: 8080
